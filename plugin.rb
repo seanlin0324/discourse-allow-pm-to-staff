@@ -13,6 +13,6 @@ after_initialize do
       # User disabled private message
       (target.staff? || is_staff? || target.user_option.allow_private_messages) &&
       # PMs are enabled
-      (target.staff? || is_staff? || SiteSetting.enable_private_messages)
+      (target.staff? || is_staff? || SiteSetting.enable_personal_messages)
   end
 end
